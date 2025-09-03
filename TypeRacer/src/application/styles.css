@@ -1,0 +1,65 @@
+
+
+@font-face {
+    font-family:
+    src: url('/application/PressStart2P-Regular.ttf'); /* Add this font to your resources */
+}
+
+.root {
+    -fx-background-color: #FAEBD7; 
+     -fx-font-family: "Press Start 2P", monospace;
+    -fx-text-fill: #081E3F; 
+	-fx-font-size: 12px;
+}
+
+.label, .text, .button, .TextFlow {
+    -fx-font-family: "Press Start 2P", monospace;
+    -fx-font-size: 12px;
+    -fx-text-fill: #081E3F;
+}
+
+
+
+
+
+/* TextField styling */
+.text-field {
+    -fx-background-color: #081E3F;
+    -fx-border-color: #081E3F;
+    -fx-border-width: 7px;
+    -fx-text-fill: #081E3F;
+    -fx-prompt-text-fill: #081E3F;
+
+}
+
+.text-field:focused {
+        /* Focused border color (e.g., blue) */
+        -fx-background-color: -fx-control-inner-background, -fx-focus-color, -fx-control-inner-background;
+    }
+
+
+
+/* Button styling */
+.button {
+    -fx-background-color: #081E3F;
+    -fx-border-color: #B6862C;
+    -fx-border-width: 3px;
+    -fx-text-fill: #B6862C;
+    -fx-cursor: hand;
+    -fx-padding: 10px;
+	
+}
+
+.button:hover {
+    -fx-background-color: #FFCC00;
+    -fx-text-fill: #081E3F;
+}
+
+
+/* Bonus: Add retro scan lines */
+.root::after {
+    -fx-background-image: linear-gradient(rgba(0,255,0,0.05) 50%, transparent 50%);
+    -fx-background-size: 100% 4px;
+    -fx-opacity: 0.15;
+    -fx-position: absolute;
+}
